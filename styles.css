@@ -1,0 +1,226 @@
+/*
+This is the first design in a series of videos on YouTube
+by @IamLewisLong. Feel free to download, fork and make pull requests.
+I'm curious to see different
+Any questions feel free to contact me on Twitter @IamLewisLong.
+Have fun!
+
+Original Design by Patrik Svoboda
+https://dribbble.com/shots/2646155-Profile-design
+
+1: Global Styles
+2: Navigation
+3: Header
+4: About
+5: Messages
+
+*/
+
+/******************
+1: Global Styles
+*******************/
+
+body {
+  color: rgba(0,0,0,.75);
+}
+
+* { box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #68AFE8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.row {
+  margin-bottom: 16px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+/******************
+1: Navigation
+*******************/
+
+#top  {
+  background-image: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.2)),url('images/father_and_son.jpg');
+  background-size: cover;
+  background-position: left bottom;
+  /*background-attachment: fixed;*/
+  position: relative;
+}
+
+#nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#nav a {
+  font-size: 18px;
+}
+
+#nav .title {
+  text-align: center;
+  color: rgba(0,0,0,.5);
+  font-weight: 500;
+}
+
+#nav > * {
+  width: 33%;
+}
+
+#nav a:last-of-type {
+  text-align: right;
+}
+
+/******************
+3: Header
+*******************/
+
+#header {
+  text-align: center;
+}
+
+.avatar {
+  background-image: url('images/father_and_son.jpg');
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  height: 128px;
+  width: 128px;
+  border: 4px solid #FFF;
+  border-radius: 50%;
+  position: relative;
+}
+
+.avatar > span {
+  display: inline-block;
+  color: #FFF;
+  font-size: 12px;
+  text-align: center;
+  line-height: 24px;
+  height: 24px;
+  width: 24px;
+  background: #68AFE8;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.button {
+  display: inline-block;
+  color: #FFF;
+  background: #68AFE8;
+  height: 48px;
+  width: 50%;
+  border-radius: 24px;
+  border: 2px solid #FFF;
+  line-height: 48px;
+}
+
+.button:hover {
+  text-decoration: none;
+  background: #EDC08E;
+}
+
+.social-media ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.social-media ul > li {
+  display: inline-block;
+  float: left;
+  margin: 32px;
+}
+
+.social-media a {
+  color: #FFF;
+  font-size: 32px;
+  text-shadow: 0 2px 2px rgba(0,0,0,.3);
+}
+
+#curve {
+  position: absolute;
+  bottom: 0;
+}
+
+/******************
+4: About
+*******************/
+
+#content {
+  margin-top: 24px;
+}
+
+.about {
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.about p {
+  padding-top: 16px;
+  padding-bottom: 48px;
+}
+
+.about hr {
+  width: 50%;
+  border: none;
+  background: #e5e5e5;
+  height: 2px;
+}
+
+.about a {
+  color: #EDC08E;
+}
+
+/******************
+5: Messages
+*******************/
+
+.updates {
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.timestamp {
+  color: rgba(0,0,0,.3);
+  font-weight: 600;
+  vertical-align: top;
+  display: inline-block;
+  width: 30px;
+}
+
+.message {
+  vertical-align: top;
+  display: inline-block;
+  width: calc(100% - 40px);
+  font-weight: bold;
+}
+
+.message a {
+  font-weight: 400;
+}

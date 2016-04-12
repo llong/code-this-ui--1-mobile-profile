@@ -1,0 +1,15 @@
+{
+  "name": "ct-ui-1-profile-screen",
+  "version": "1.0.0",
+  "description": "First episode of Code This UI video series. In this video I am coding a UI Design by Patrik Svoboda (https://dribbble.com/shots/2646155-Profile-design) of a mobile profile screen.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lewis Long",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0"
+  }
+}
